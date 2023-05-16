@@ -47,6 +47,11 @@ stages:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'kubeArtifacts'
         publishLocation: 'Container'
+        
+    
+- stage: deploy
+  displayName: deploy to kubernetes
+  
   
 
 
